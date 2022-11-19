@@ -6,12 +6,18 @@
   "main": "networking.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node networking.js"
+    "start": "node networking.js",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
+  
 }
