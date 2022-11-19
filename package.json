@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "webemailing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "networking.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node networking.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
