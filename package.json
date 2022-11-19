@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "webemailing",
   "version": "1.0.0",
   "description": "",
@@ -13,9 +12,5 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5"
   }
-  
 }

@@ -1,5 +1,5 @@
 // Imports
-import axios from 'axios'
+const axios = require('axios')
 
 // API key
 const API_KEY = "JSRUKTOXTRCFBOL1K0ZFC"; // Get your API key here: https://app.rytr.me/account/api-access
