@@ -24,7 +24,7 @@
     const axios = () => require('axios')
 
     // API key
-    const API_KEY = "JSRUKTOXTRCFBOL1K0ZFC"; // Get your API key here: https://app.rytr.me/account/api-access
+    const API_KEY = "JSRUKTOXTRCFBOL1K0ZFC";
 
     // API URL
     const API_URL = "https://api.rytr.me/v1";
@@ -48,13 +48,11 @@
       }
 
       return null;
-    }
+    } 
+    
+    console.log("tones", async () => 
+       await toneList());
 
-    // Get tones
-    async () => {
-      const tones = await toneList();
-      console.log("tones", tones);
-    }
   </script>
 </head>
 
