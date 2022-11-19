@@ -28,6 +28,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: branch-deploy
+        id: branch-deploy
+        uses: github/branch-deploy@v3.0.3
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
