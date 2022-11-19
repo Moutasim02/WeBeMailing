@@ -19,7 +19,43 @@
       }
     }
   </style>
-  <script src="./networking.js" type="module"></script>
+  <script type="module">
+    // Imports
+    const axios = () => require('axios')
+
+    // API key
+    const API_KEY = "JSRUKTOXTRCFBOL1K0ZFC"; // Get your API key here: https://app.rytr.me/account/api-access
+
+    // API URL
+    const API_URL = "https://api.rytr.me/v1";
+
+
+    // Tone list
+    async function toneList() {
+      try {
+        const { data } = await axios({
+          method: "get",
+          url: `${API_URL}/tones`,
+          headers: {
+            Authentication: `Bearer ${API_KEY}`,
+            "Content-Type": "application/json",
+          },
+        });
+
+        return data ? data.data : null;
+      } catch (error) {
+        console.log(error);
+      }
+
+      return null;
+    }
+
+    // Get tones
+    async () => {
+      const tones = await toneList();
+      console.log("tones", tones);
+    }
+  </script>
 </head>
 
 <body>
@@ -59,6 +95,10 @@
     <p>Get your email in seconds</p>
   </div>
 
+  <div id="result">
+  </div>
+
+
   <!--Main Body Content-->
   <div class="container-fluid custom-padding mt-5">
     <!--User input-->
@@ -80,7 +120,7 @@
       </div>
       <input type="text" class="form-control" placeholder="Enter your email subject"
         aria-label="Text input with dropdown button" />
-      <button class="btn btn-primary" type="button" id="button-addon2">
+      <button class="btn btn-primary" type="button" id="generate_button">
         Generate
       </button>
     </div>
