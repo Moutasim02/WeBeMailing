@@ -6,9 +6,7 @@
   "main": "networking.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node networking.js",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "node networking.js"
   },
   "keywords": [],
   "author": "",
