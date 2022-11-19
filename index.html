@@ -48,11 +48,14 @@
       }
 
       return null;
-    } 
-    
-    console.log("tones", async () => 
-       await toneList());
+    }
 
+    // Get tones
+    async () => {
+      const tones = await toneList();
+      console.log("tones", tones);
+      document.getElementById('result').innerHTML = tones.tones;
+    }
   </script>
 </head>
 
