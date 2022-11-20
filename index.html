@@ -21,7 +21,9 @@
         padding-right: 10em;
       }
     }
-
+    i:hover {
+      color: #256d85;
+    }
     select {
       background-color: #6c757d !important;
       color: white !important;
@@ -91,18 +93,17 @@
 
       <input type="text" class="form-control" placeholder="Enter your email subject"
         aria-label="Text input with dropdown button" id="topic" />
-      <button class="btn btn-primary" type="button" id="generate_button">
-        Generate
-      </button>
+      <button class="btn btn-primary" type="button" id="generate_button">Generate</button>
     </div>
-
+    <div><span id="manipulated"></span></div>
+    
     <!--Displaying Generated Email-->
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
+            Generated Email #1
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -110,8 +111,8 @@
           <div class="accordion-body">
             <div class="form-group">
               <label for="Textarea1" style="font-weight: bold;">Subject: Sample Email</label>
-              <button onclick="speakLoud('#Textarea1')" id="btn_speak1"><i class="bi bi-volume-up-fill"></i></button>
-              <textarea class="form-control" id="Textarea1" rows="12" id="text1">
+              <i class="bi bi-volume-up-fill" onclick="speakLoud('#Textarea1')"></i>
+              <textarea class="form-control" id="Textarea1" rows="14" id="text1">
   Dear Sir or Madam,
   We hope that you will find our product to your liking. We have a
   variety of features that will make it the perfect fit for your
@@ -122,11 +123,10 @@
   - Easy to use reporting features, and more!
   We think this is the best option for what you need, so please let
   us know if you have any questions or concerns!
-  You can contact us at {email address}. We are open all hours and
+  You can contact us at contact@WeBeMailing.com. We are open all hours and
   available to chat anytime, as well.
   Thank you for taking the time to review our product!
               </textarea>
-              <span id="manipulated"></span>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
         <h2 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
+            Generated Email #2
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -143,8 +143,8 @@
           <div class="accordion-body">
             <div class="form-group">
               <label for="Textarea2" style="font-weight: bold;">Subject: Sample Email</label>
-              <button onclick="speakLoud('#Textarea2')" id="btn_speak2"><i class="bi bi-volume-up-fill"></i></button>
-              <textarea class="form-control" id="Textarea2" rows="12">
+              <i class="bi bi-volume-up-fill" onclick="speakLoud('#Textarea2')"></i>
+              <textarea class="form-control" id="Textarea2" rows="14">
   Dear Sir or Madam,
   We hope that you will find our product to your liking. We have a
   variety of features that will make it the perfect fit for your
@@ -155,7 +155,7 @@
   - Easy to use reporting features, and more!
   We think this is the best option for what you need, so please let
   us know if you have any questions or concerns!
-  You can contact us at {email address}. We are open all hours and
+  You can contact us at contact@WeBeMailing.com. We are open all hours and
   available to chat anytime, as well.
   Thank you for taking the time to review our product!
               </textarea>
@@ -167,7 +167,7 @@
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
+            Generated Email #3
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -175,8 +175,8 @@
           <div class="accordion-body">
             <div class="form-group">
               <label for="Textarea3" style="font-weight: bold;">Subject: Sample Email</label>
-              <button onclick="speakLoud('#Textarea3')" id="btn_speak3"><i class="bi bi-volume-up-fill"></i></button>
-              <textarea class="form-control" id="Textarea3" rows="12">
+              <i class="bi bi-volume-up-fill" onclick="speakLoud('#Textarea3')"></i>
+              <textarea class="form-control" id="Textarea3" rows="14">
   Dear Sir or Madam,
   We hope that you will find our product to your liking. We have a
   variety of features that will make it the perfect fit for your
@@ -187,7 +187,7 @@
   - Easy to use reporting features and more
   We think this is the best option for what you need, so please let
   us know if you have any questions or concerns!
-  You can contact us at {email address}. We are open all hours and
+  You can contact us at contact@WeBeMailing.com. We are open all hours and
   available to chat anytime, as well.
   Thank you for taking the time to review our product!
               </textarea>

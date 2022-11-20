@@ -11,6 +11,7 @@ function speakLoud(t1) {
         speechSynthesis.resume();
      }, 5000);
     speechSynthesis.speak(speech)
+    speech.onend = () => {document.getElementById('manipulated').innerHTML = 'Thanks for using WeBeMailing'}
 }
 
 

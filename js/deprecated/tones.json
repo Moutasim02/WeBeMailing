@@ -1,0 +1,163 @@
+{
+    "success": true,
+    "message": "",
+    "data": [
+        {
+            "_id": "6058207530f7b1000c1c4f86",
+            "name": "Appreciative",
+            "slug": "appreciative",
+            "createdAt": "2021-03-22T04:43:33.811Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058209c30f7b1000c1c4f88",
+            "name": "Assertive",
+            "slug": "assertive",
+            "createdAt": "2021-03-22T04:44:12.712Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058223630f7b1000c1c4f96",
+            "name": "Awestruck",
+            "slug": "awestruck",
+            "createdAt": "2021-03-22T04:51:02.974Z",
+            "isNew": false
+        },
+        {
+            "_id": "605820c030f7b1000c1c4f89",
+            "name": "Candid",
+            "slug": "candid",
+            "createdAt": "2021-03-22T04:44:48.079Z",
+            "isNew": false
+        },
+        {
+            "_id": "60572a639bdd4272b8fe358a",
+            "name": "Casual",
+            "slug": "casual",
+            "createdAt": "2021-03-21T11:13:39.300Z",
+            "isNew": false
+        },
+        {
+            "_id": "605820d430f7b1000c1c4f8a",
+            "name": "Cautionary",
+            "slug": "cautionary",
+            "createdAt": "2021-03-22T04:45:08.637Z",
+            "isNew": false
+        },
+        {
+            "_id": "605820e330f7b1000c1c4f8b",
+            "name": "Compassionate",
+            "slug": "compassionate",
+            "createdAt": "2021-03-22T04:45:23.929Z",
+            "isNew": false
+        },
+        {
+            "_id": "60572a639bdd4272b8fe358b",
+            "name": "Convincing",
+            "slug": "convincing",
+            "createdAt": "2021-03-21T11:13:39.792Z",
+            "isDefault": true,
+            "isNew": false
+        },
+        {
+            "_id": "60e96f6992161b0013c6ae4a",
+            "isDefault": false,
+            "name": "Critical",
+            "slug": "critical",
+            "createdAt": "2021-07-10T09:59:05.843Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058212830f7b1000c1c4f8d",
+            "name": "Earnest",
+            "slug": "earnest",
+            "createdAt": "2021-03-22T04:46:32.211Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058213830f7b1000c1c4f8e",
+            "name": "Enthusiastic",
+            "slug": "enthusiastic",
+            "createdAt": "2021-03-22T04:46:48.471Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058200830f7b1000c1c4f85",
+            "name": "Formal",
+            "slug": "formal",
+            "createdAt": "2021-03-22T04:41:44.800Z",
+            "isNew": false
+        },
+        {
+            "_id": "60572a649bdd4272b8fe358c",
+            "name": "Funny",
+            "slug": "funny",
+            "createdAt": "2021-03-21T11:13:40.094Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058215930f7b1000c1c4f8f",
+            "name": "Humble",
+            "slug": "humble",
+            "createdAt": "2021-03-22T04:47:21.523Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058216730f7b1000c1c4f90",
+            "name": "Humorous",
+            "slug": "humorous",
+            "createdAt": "2021-03-22T04:47:35.727Z",
+            "isNew": false
+        },
+        {
+            "_id": "60ff8d3afc873e000c08e8b2",
+            "isDefault": false,
+            "name": "Informative",
+            "slug": "informative",
+            "createdAt": "2021-07-27T04:36:10.578Z",
+            "isNew": false
+        },
+        {
+            "_id": "6064c6679bde74000cea994c",
+            "name": "Inspirational",
+            "slug": "inspirational",
+            "createdAt": "2021-03-31T18:58:47.885Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058219030f7b1000c1c4f92",
+            "name": "Joyful",
+            "slug": "joyful",
+            "createdAt": "2021-03-22T04:48:16.214Z",
+            "isNew": false
+        },
+        {
+            "_id": "6058208730f7b1000c1c4f87",
+            "name": "Passionate",
+            "slug": "passionate",
+            "createdAt": "2021-03-22T04:43:51.224Z",
+            "isNew": false
+        },
+        {
+            "_id": "605821c030f7b1000c1c4f93",
+            "name": "Thoughtful",
+            "slug": "thoughtful",
+            "createdAt": "2021-03-22T04:49:04.430Z",
+            "isNew": false
+        },
+        {
+            "_id": "605821cc30f7b1000c1c4f94",
+            "name": "Urgent",
+            "slug": "urgent",
+            "createdAt": "2021-03-22T04:49:16.310Z",
+            "isNew": false
+        },
+        {
+            "_id": "605821e030f7b1000c1c4f95",
+            "name": "Worried",
+            "slug": "worried",
+            "createdAt": "2021-03-22T04:49:36.552Z",
+            "isNew": false
+        }
+    ]
+}

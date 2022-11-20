@@ -13,5 +13,9 @@ Casual, Neutral, Joyful, Formal, Informal, Informative, urgent, etc.), the use c
 Email, caption ideas, etc…) By this, we can use full stack development as students and learn how to integrate all the
 components.
 
+This is a partial implementation and is meant for education purposes only. 
 
-
+## Contributors
+- Moutasim El Ayoubi
+- Mohammad Qasem
+- Fares Al Areefi
