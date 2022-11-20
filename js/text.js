@@ -16,4 +16,7 @@ function speakLoud(t1) {
     speech.onend = () => {document.getElementById('manipulated').innerHTML = 'Thanks for using WeBeMailing'}
 }
 
+function pause() {
+    speechSynthesis.pause()  
+}
 
