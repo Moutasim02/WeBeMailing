@@ -6,6 +6,7 @@ function speakLoud(t1) {
     
     speech.voice = speechSynthesis.getVoices()[1];
     speech.text = text.value;
+    speech.rate = 0.9
     setInterval(() => {
         speechSynthesis.pause();
         speechSynthesis.resume();
