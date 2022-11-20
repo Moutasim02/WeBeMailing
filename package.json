@@ -2,10 +2,10 @@
   "name": "webemailing",
   "version": "1.0.0",
   "description": "",
-  "main": "networking.js",
+  "main": "./js/text.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node networking.js"
+    "start": "node ./js/text.js"
   },
   "keywords": [],
   "author": "",

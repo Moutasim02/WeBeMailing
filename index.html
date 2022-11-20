@@ -10,6 +10,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <script src="./js/text.js"></script>
+
   <style>
     /* Mobile First approach */
     @media only screen and (min-width: 800px) {
@@ -18,44 +21,18 @@
         padding-right: 10em;
       }
     }
+
+    select {
+      background-color: #6c757d !important;
+      color: white !important;
+    }
+
+    select option {
+      background-color: white !important;
+      color: black !important;
+    }
   </style>
-  <script type="module">
-    // Imports
-    const axios = () => require('axios')
-
-    // API key
-    const API_KEY = "JSRUKTOXTRCFBOL1K0ZFC";
-
-    // API URL
-    const API_URL = "https://api.rytr.me/v1";
-
-
-    // Tone list
-    async function toneList() {
-      try {
-        const { data } = await axios({
-          method: "get",
-          url: `${API_URL}/tones`,
-          headers: {
-            Authentication: `Bearer ${API_KEY}`,
-            "Content-Type": "application/json",
-          },
-        });
-
-        return data ? data.data : null;
-      } catch (error) {
-        console.log(error);
-      }
-
-      return null;
-    }
-
-    // Get tones
-    async () => {
-      const tones = await toneList();
-      await console.log("tones", tones);
-    }
-  </script>
+  
 </head>
 
 <body>
@@ -95,31 +72,25 @@
     <p>Get your email in seconds</p>
   </div>
 
-  <div id="result">
-  </div>
-
-
   <!--Main Body Content-->
   <div class="container-fluid custom-padding mt-5">
     <!--User input-->
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Choose a Tone
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Casual</a>
-          <li>
-            <hr class="dropdown-divider" />
-          </li>
-          <a class="dropdown-item" href="#">Formal</a>
-          <a class="dropdown-item" href="#">Friendly</a>
-          <a class="dropdown-item" href="#">Curious</a>
+
+        <div id="emailTone">
+          <select class="form-select form-select-color" aria-label=".form-select-sm">
+            <option selected>Choose a Tone</option>
+            <option data-value="1">Casual</option>
+            <option data-value="2">Formal</option>
+            <option data-value="3">Friendly</option>
+            <option data-value="3">Curious</option>
+          </select>
         </div>
       </div>
+
       <input type="text" class="form-control" placeholder="Enter your email subject"
-        aria-label="Text input with dropdown button" />
+        aria-label="Text input with dropdown button" id="topic" />
       <button class="btn btn-primary" type="button" id="generate_button">
         Generate
       </button>
@@ -137,19 +108,26 @@
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>Subject: Sample Email</strong> <br />Dear Sir or Madam,<br />
-            We hope that you will find our product to your liking. We have a
-            variety of features that will make it the perfect fit for your
-            business.<br />
-            Some of these features include:<br />
-            - Vast reach on social media<br />
-            - Automated email reminders<br />
-            - Easy to use reporting features, and more!<br />
-            We think this is the best option for what you need, so please let
-            us know if you have any questions or concerns! <br />
-            You can contact us at {email address}. We are open all hours and
-            available to chat anytime, as well.<br />
-            Thank you for taking the time to review our product!
+            <div class="form-group">
+              <label for="Textarea1" style="font-weight: bold;">Subject: Sample Email</label>
+              <button onclick="speakLoud('#Textarea1')" id="btn_speak1"><i class="bi bi-volume-up-fill"></i></button>
+              <textarea class="form-control" id="Textarea1" rows="12" id="text1">
+  Dear Sir or Madam,
+  We hope that you will find our product to your liking. We have a
+  variety of features that will make it the perfect fit for your
+  business.
+  Some of these features include:
+  - Vast reach on social media
+  - Automated email reminders
+  - Easy to use reporting features, and more!
+  We think this is the best option for what you need, so please let
+  us know if you have any questions or concerns!
+  You can contact us at {email address}. We are open all hours and
+  available to chat anytime, as well.
+  Thank you for taking the time to review our product!
+              </textarea>
+              <span id="manipulated"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -163,19 +141,25 @@
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>Subject: Sample Email</strong> <br />Dear Sir or Madam,<br />
-            We hope that you will find our product to your liking. We have a
-            variety of features that will make it the perfect fit for your
-            business.<br />
-            Some of these features include:<br />
-            - Vast reach on social media<br />
-            - Automated email reminders<br />
-            - Easy to use reporting features, and more!<br />
-            We think this is the best option for what you need, so please let
-            us know if you have any questions or concerns! <br />
-            You can contact us at {email address}. We are open all hours and
-            available to chat anytime, as well.<br />
-            Thank you for taking the time to review our product!
+            <div class="form-group">
+              <label for="Textarea2" style="font-weight: bold;">Subject: Sample Email</label>
+              <button onclick="speakLoud('#Textarea2')" id="btn_speak2"><i class="bi bi-volume-up-fill"></i></button>
+              <textarea class="form-control" id="Textarea2" rows="12">
+  Dear Sir or Madam,
+  We hope that you will find our product to your liking. We have a
+  variety of features that will make it the perfect fit for your
+  business.
+  Some of these features include:
+  - Vast reach on social media
+  - Automated email reminders
+  - Easy to use reporting features, and more!
+  We think this is the best option for what you need, so please let
+  us know if you have any questions or concerns!
+  You can contact us at {email address}. We are open all hours and
+  available to chat anytime, as well.
+  Thank you for taking the time to review our product!
+              </textarea>
+            </div>
           </div>
         </div>
       </div>
@@ -189,24 +173,30 @@
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>Subject: Sample Email</strong> <br />Dear Sir or Madam,<br />
-            We hope that you will find our product to your liking. We have a
-            variety of features that will make it the perfect fit for your
-            business.<br />
-            Some of these features include:<br />
-            - Vast reach on social media<br />
-            - Automated email reminders<br />
-            - Easy to use reporting features, and more!<br />
-            We think this is the best option for what you need, so please let
-            us know if you have any questions or concerns! <br />
-            You can contact us at {email address}. We are open all hours and
-            available to chat anytime, as well.<br />
-            Thank you for taking the time to review our product!
+            <div class="form-group">
+              <label for="Textarea3" style="font-weight: bold;">Subject: Sample Email</label>
+              <button onclick="speakLoud('#Textarea3')" id="btn_speak3"><i class="bi bi-volume-up-fill"></i></button>
+              <textarea class="form-control" id="Textarea3" rows="12">
+  Dear Sir or Madam,
+  We hope that you will find our product to your liking. We have a
+  variety of features that will make it the perfect fit for your
+  business.
+  Some of these features include:
+  - Vast reach on social media
+  - Automated email reminders
+  - Easy to use reporting features and more
+  We think this is the best option for what you need, so please let
+  us know if you have any questions or concerns!
+  You can contact us at {email address}. We are open all hours and
+  available to chat anytime, as well.
+  Thank you for taking the time to review our product!
+              </textarea>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--End of Displaying email-->
+    <!--End of Displaying emails-->
   </div>
 </body>
 
